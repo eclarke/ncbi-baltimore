@@ -38,9 +38,7 @@ def get_taxa(tax_ids, out_filename):
     lineages = []
     for t in tax_info:
         LineageEx = t.get('LineageEx', ())
-        pprint.pprint(t)
         _lineage = {r['Rank']: r['ScientificName'] for r in LineageEx}
-        pprint.pprint(_lineage)
         _lineage['baltimore'] = get_baltimore_group(LineageEx)
         _lineage['name'] = t.get('ScientificName', 'NA')
         lineages.append(_lineage)
@@ -100,5 +98,4 @@ if __name__ == "__main__":
     _input = args.input if args.input else sys.stdin
     
     tax_ids = [t.strip() for t in _input.readlines()]
-    print(tax_ids)
     get_taxa(tax_ids, args.output)
