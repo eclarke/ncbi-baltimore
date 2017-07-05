@@ -1,0 +1,18 @@
+Ranks:
+  - superkingdom
+  - baltimore
+  - phylum
+  - class
+  - order
+  - family
+  - subfamily
+  - genus
+  - species
+  - name
+Baltimore:
+  - 'dsDNA viruses, no RNA stage'
+  - 'ssDNA viruses'
+  - 'dsRNA viruses'
+  - 'ssRNA positive-strand viruses, no DNA stage'
+  - 'ssRNA negative-strand viruses'
+  - 'Retro-transcribing viruses'
