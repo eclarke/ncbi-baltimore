@@ -85,7 +85,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "-i", "--input",
-        type=argparse.FileType('w'),
+        type=argparse.FileType('r'),
         help="Input list of taxids, one per line",
         default=None)
     parser.add_argument(
